@@ -1,0 +1,44 @@
+body {
+	height: 100%;
+}
+
+header {
+	border: 1px solid black;
+	background: red;
+}
+
+#title {
+	text-align: center;
+	font-size: 200%;
+	border: 1px solid black;
+}
+
+article {
+	border: 1px solid black;
+	background: orange;
+	
+}
+
+#question, #answers {
+	text-align: center;
+	font-size: 200%;
+	border: 1px solid black;
+}
+
+footer {
+	border: 1px solid black;
+	background: yellow;
+	text-align:center;
+}
+
+
+#score {
+	text-align: center;
+	font-size: 200%;
+	border: 1px solid black;
+}
+
+#button{
+	padding:20%;
+	text-align:center;
+}
