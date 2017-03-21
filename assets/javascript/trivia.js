@@ -46,7 +46,7 @@ $("#a1").html("*" + answers[0] + "<br>");
 $("#a2").html("*" + answers[1] + "<br>");
 $("#a3").html("*" + answers[2] + "<br>");
 $("#a4").html("*" + answers[3] + "<br>");
-x=setTimeout(timesUp, 5000);
+x=setTimeout(timesUp, 7000);
 		function timesUp(){
 				$("#a0").html("Times Up!" + "<br>")
 				clearTimeout(x);
@@ -75,7 +75,7 @@ function answers1() {
 		$("#a2").html("The correct answer is:"+ "<br>");
 		$("#a3").html("");
 		$("#a4").html(answers[answers[4]]+"<br>");	
-		y=setTimeout(timesUp2, 3000);
+		y=setTimeout(timesUp2, 4000);
 		function timesUp2(){
 				clearTimeout(y);
 				info();
