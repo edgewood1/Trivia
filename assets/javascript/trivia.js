@@ -46,7 +46,7 @@ $("#a1").html("*" + answers[0] + "<br>");
 $("#a2").html("*" + answers[1] + "<br>");
 $("#a3").html("*" + answers[2] + "<br>");
 $("#a4").html("*" + answers[3] + "<br>");
-x=setTimeout(timesUp, 7000);
+x=setTimeout(timesUp, 9000);
 		function timesUp(){
 				$("#a0").html("Times Up!" + "<br>")
 				clearTimeout(x);
@@ -90,7 +90,7 @@ function info(){
 		$("#a4").html("");
 		$(".article").attr("margin-bottom", "-70px");
 		
-a=setTimeout(timesUp3, 8000);
+a=setTimeout(timesUp3, 12000);
 		function timesUp3(){
 				clearTimeout(a);
 				$(".article").attr("margin-bottom", "0");
