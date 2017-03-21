@@ -15,6 +15,9 @@ function restart(){
 	timeouts=0;
 	losses=0;
 	wins=0;
+	clearTimeout(x);
+	clearTimeout(y);
+	clearTimeout(a);
 	gameplay();
 };
 
@@ -38,13 +41,14 @@ answers = bank[question];
 
 // $("#qa").html(question);
 $("#question").html(question);
-$("#a1").html(answers[0] + "<br>");
-$("#a2").html(answers[1] + "<br>");
-$("#a3").html(answers[2] + "<br>");
-$("#a4").html(answers[3] + "<br>");
+$("#a0").html("~ Click the correct answer ~" + "<br>");
+$("#a1").html("*" + answers[0] + "<br>");
+$("#a2").html("*" + answers[1] + "<br>");
+$("#a3").html("*" + answers[2] + "<br>");
+$("#a4").html("*" + answers[3] + "<br>");
 x=setTimeout(timesUp, 5000);
 		function timesUp(){
-				$("#a1").html("Times Up!" + "<br>")
+				$("#a0").html("Times Up!" + "<br>")
 				clearTimeout(x);
 				timeouts++;
 				answers1();
@@ -56,19 +60,20 @@ $(".answers").one("click", function(event){
 	clearTimeout(x);
 	z=$(".answers").index(this);
 	if (z===parseInt(answers[4])) { // you win
-		$("#a1").html("Correct!" + "<br>");
+		$("#a0").html("Correct!" + "<br>");
 		wins++;
 	}
 		else {  // you lose
-		$("#a1").html("Incorrect! " + "<br>");
+		$("#a0").html("Incorrect! " + "<br>");
 		losses++;
 			}
 			answers1();
 			});//end event handler
 
 function answers1() {
+		$("#a1").html("");
 		$("#a2").html("The correct answer is:"+ "<br>");
-		$("#a3").html("<br>");
+		$("#a3").html("");
 		$("#a4").html(answers[answers[4]]+"<br>");	
 		y=setTimeout(timesUp2, 3000);
 		function timesUp2(){
@@ -78,13 +83,14 @@ function answers1() {
 		};//answers1
 
 function info(){
-	$("#a1").html(answers[5]);
+	$("#a0").html(answers[5]);
+	$("#a1").html("");
 	$("#a2").html("");
 		$("#a3").html("");
 		$("#a4").html("");
 		$(".article").attr("margin-bottom", "-70px");
 		
-a=setTimeout(timesUp3, 5000);
+a=setTimeout(timesUp3, 8000);
 		function timesUp3(){
 				clearTimeout(a);
 				$(".article").attr("margin-bottom", "0");
