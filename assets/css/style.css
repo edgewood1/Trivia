@@ -1,44 +1,42 @@
 body {
 	height: 100%;
+	background-color: #F79787;
 }
 
 header {
-	border: 1px solid black;
-	background: red;
+	text-align: center;
+	font-size: 200%;
+}
+
+h1, h2, h3 {
+	color: #5E5F7B;
 }
 
 #title {
-	text-align: center;
-	font-size: 200%;
-	border: 1px solid black;
 }
 
 article {
-	border: 1px solid black;
-	background: orange;
-	
+	text-align: center;
+	height: 75%;
+	font-size: 150%;
 }
 
-#question, #answers {
-	text-align: center;
-	font-size: 200%;
-	border: 1px solid black;
+.question, .answers {
+	padding-top: 25px;
 }
 
 footer {
-	border: 1px solid black;
-	background: yellow;
 	text-align:center;
+	height: 25%;
 }
-
 
 #score {
 	text-align: center;
-	font-size: 200%;
-	border: 1px solid black;
+	font-size: 175%;
+	padding: 5px;
 }
 
 #button{
-	padding:20%;
+	padding:3%;
 	text-align:center;
 }
